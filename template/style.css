@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #ffe4e6, #fbcfe8);
+    color: #831843;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #be185d;
+    text-shadow: 2px 2px #f9a8d4;
+  }
+  
+  p.description {
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+    margin-bottom: 40px;
+  }
+  
+  .card h2 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .card ul {
+    list-style: disc inside;
+    line-height: 1.8;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  
+  .gallery img {
+    max-width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  iframe {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 600px;
+    height: 340px;
+    margin-bottom: 40px;
+  }
+  
+  footer {
+    font-size: 1rem;
+    color: #9d174d;
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes zoomIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  .animated {
+    animation: fadeIn 1.2s ease forwards;
+  }
+  .zoom {
+    animation: zoomIn 1s ease forwards;
+  }
